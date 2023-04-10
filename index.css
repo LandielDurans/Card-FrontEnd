@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+:root{   
+color: hsl(233, 47%, 7%);
+color: hsl(244, 38%, 16%);
+color: hsl(277, 64%, 61%);
+color: hsl(0, 0%, 100%);
+color: hsla(0, 0%, 100%, 0.75);
+color: hsla(0, 0%, 100%, 0.6);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(233, 47%, 7%);
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+}
+
+h1 > span{
+color: hsl(277, 64%, 61%);
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    place-items: center;
+}
+
+.card-center{
+    display: flex;
+    margin: 0;
+    width: 65%;
+    height: 400px;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+}
+
+.text-component{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 65px 100px 40px 70px;
+}
+
+h1{
+    color: hsl(0, 0%, 100%);
+}
+
+.img-header{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: auto;
+    order: 2;
+}
+
+p{
+    padding-top: 30px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.info-status{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    padding-top: 60px;
+}
+
+.info{
+    list-style-type: none;
+    padding: 5px;
+}
+
+h3{
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+}
+
+.info-text{
+    color: hsla(0, 0%, 100%, 0.6);
+    font-weight: normal;
+    font-size: 12px;
+}
+
+
+@media screen and (max-width:375px){
+
+    body{
+        height: 100%;
+        padding-top: 35px;
+    }
+
+    .card-center{
+        display: flex;
+        flex-direction: column;
+       height: 93%;
+       position: sticky;
+       right: 46px;       
+    }
+    .img-header{
+        order: 0;
+    }
+    
+    h1{
+        text-align: center;
+    }
+    .img-header{
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 10px;
+    }
+
+    .text-component{
+        padding: 40px 35px 15px ;
+        text-align: center;
+    }
+
+    p{
+        font-size: 15px;
+    }
+    .info-status{
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+    }
+
+    .info-text{
+        font-size: 12px;
+        flex-direction: column;
+        display: flex;
+        line-height: 2;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+
+    .card-center{
+        display: flex;
+        width: 79%;
+    }
+
+    .info-status{
+        padding-top: 40px;
+    }
+}
